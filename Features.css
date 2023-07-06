@@ -1,0 +1,236 @@
+*
+{
+    margin : 0 ;
+    padding : 0 ;
+    box-sizing : border-box ;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body
+{
+    width : 100% ;
+    height : 100vh ;
+    font-family : 'roboto';
+    background-image: linear-gradient(rgba(12, 17, 35, 0.7), rgba(11, 15, 28, 0.7)), url("header_img.jpeg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+  
+.header {
+    /* min-height: 100vh; */
+    /* background-image  : linear-gradient(rgba(12, 17, 35, 0.7),rgba(11, 15, 28, 0.7)),url("header_img.jpeg") ;
+    background-position : center ;
+    background-size : cover ;
+    position : relative ;  */
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 6px;
+    padding-left: 6px
+  }
+  
+  .nav-links {
+    /* display : flex ;
+    justify-content : space-between ; */
+    flex: 1;
+    /* byfircation of flex box items spaces  */
+    /* the width of all other elements will be the same as their content, but the element with flex: 1 will be given the remaining full space. */
+    text-align: right;
+  }
+  
+  .nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  }
+  
+  .nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.5s;
+  }
+  
+  .nav-links ul li :hover {
+    width: 100%;
+    color: rgb(236, 132, 76);
+  }
+  
+  .nav-links ul li :active {
+    color: purple;
+  }
+  
+  .logo-img {
+    /* width: 50px; */
+     width : 150px ;
+     padding-left : 30px ;
+     padding-top : 30px ;
+  }
+  
+  /* .nav-links ul li ::after 
+  {
+    content : '' ;
+    width : 0% ;
+    height : 2px ;
+    background : orange ;
+    display : block ;
+    margin : auto ;
+    transition : 0.5s ;
+  }
+  
+  .nav-links ul li:hover::after 
+  {
+    width : 100% ;
+  } */
+  
+  @media(max-width : 700px) {
+   
+  
+    .nav-links ul li {
+      display: block;
+    }
+  
+    .nav-links {
+      position: absolute;
+      background: rgba(11, 15, 28, 0.7);
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: 0;
+      text-align: left;
+      z-index: 2;
+    }
+  }
+
+.row
+{
+    width : 100% ;
+    min-height : 100vh ;
+    /* background-color : black ; */
+    display : flex ;
+    justify-content : center ;
+    align-items : center ;
+    padding : 30px 90px ;
+}
+
+.feature_cards-column
+{
+    display : flex ;
+    /* justify-content : space-between ; */
+     /* align-items : center ;
+    text-align : center ; */ 
+    /* flex-direction : row; */
+    flex-wrap : wrap ;
+    /* justify-items: center; */
+    
+
+}
+
+.feature_cards-column .card
+{
+    /* flex : 1; */
+    flex : 30% ;
+    margin : 20px 20px ;
+    /* box-shadow : 0px 2px 8px 0px rgba(0,0,0,0); */
+    width : 220px ;
+    height : 350px ;
+    border-radius : 20px ;
+    border : 5px solid white ;
+    position : relative ;
+    box-sizing : 200px ;
+    overflow : hidden ;
+    /* color : white ; */
+}
+
+.card-image
+{
+    width : 100% ;
+    height : 100% ;
+    object-fit : cover ;
+    border-radius : 15px ;
+}
+
+.card-body
+{
+    width : 100% ;
+    height : 100% ;
+    bottom : -100% ;
+    right : 0;
+    position : absolute ;
+    background : #eb820a4e ; 
+    backdrop-filter : blur(5px) ;  
+    border-radius : 15px ;
+    /* color : white ; */
+    padding : 30px ;
+    display : flex ;
+    flex-direction : column ;
+    justify-content : center ;
+    transition : 1s ;
+    
+}
+
+.card:hover .card-body
+{
+    bottom : 0 ;
+    /* background : orange ; 
+    opacity : 0.8 ; */
+    color : white ;
+}
+
+.card-title
+{
+    text-transform : uppercase ;
+    font-size : 30px ;
+    font-weight : 500;
+    /* position : relative ;
+    z-index : 1 ; */
+}
+
+
+.card-sub-title 
+{
+    text-transform : capitalize ;
+    font-size : 20px ;
+    font-weight : 300 ;
+}
+
+.card-info
+{
+    font-size : 16px ;
+    line-height : 25px ;
+    margin : 40px 0 ;
+    font-weight : 400 ;
+}
+
+.card-btn
+{
+    color :black ;
+    background : rgba(201, 19, 19, 0.85) ;
+    padding : 10px 20px ;
+    border-radius : 5px ;
+    text-transform : capitalize ;
+    border : none ;
+    outline : none ;
+    width :120px ;
+    font-weight : 500 ;
+    cursor : pointer ;
+
+}
+
+.footer p
+{
+    text-align: center;
+    color : white ;
+    margin-bottom : 20px ;
+    padding-bottom : 20px ;
+}

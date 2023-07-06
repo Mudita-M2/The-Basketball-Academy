@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+img{
+  width : 150px ;
+  padding-left : 30px ;
+  padding-top : 30px ;
+}
+
+body {
+  background-image: linear-gradient(rgba(12, 17, 35, 0.7), rgba(11, 15, 28, 0.7)), url("header_img.jpeg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  /* background-image  : linear-gradient(rgba(12, 17, 35, 0.7),rgba(11, 15, 28, 0.7)),url("header_img.jpeg") ;
+  background-position : center ;
+  background-size : cover ;
+  position : relative ;  */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 6px;
+  padding-left: 6px
+}
+
+nav.img {
+  width: 50px;
+}
+
+.nav-links {
+  /* display : flex ;
+  justify-content : space-between ; */
+  flex: 1;
+  /* byfircation of flex box items spaces  */
+  /* the width of all other elements will be the same as their content, but the element with flex: 1 will be given the remaining full space. */
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.nav-links ul li :hover {
+  width: 100%;
+  color: rgb(236, 132, 76);
+}
+
+.nav-links ul li :active {
+  color: purple;
+}
+
+/* .nav-links ul li ::after 
+{
+  content : '' ;
+  width : 0% ;
+  height : 2px ;
+  background : orange ;
+  display : block ;
+  margin : auto ;
+  transition : 0.5s ;
+}
+
+.nav-links ul li:hover::after 
+{
+  width : 100% ;
+} */
+
+.text-box {
+  width: 90%;
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-49%, -50%);
+  text-align: center;
+}
+
+.text-box h1 {
+  font-size: 70px;
+  /* width : 10px ;
+  text-align : center ; */
+  margin-bottom: 20px;
+}
+
+.text-box h2{
+  font-size : 50px ;
+}
+
+.text-box p {
+  margin: 10px 0 20px;
+  margin-top : 20px;
+  font-size: 20px;
+  color: white;
+}
+
+.hero-btn {
+  display: block;
+  margin-left : 42% ;
+  text-decoration: none;
+  color: white;
+  border: 1px, solid, white;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  transform: translate(-15%);
+  border-radius: 10px;
+  
+}
+
+.hero-btn:hover {
+  border: 3px solid orange;
+  background: rgb(234, 110, 15);
+  transition: 0.5s;
+}
+
+/* @media(max-width : 700px) {
+  .text-box h1 {
+    
+    font-size: 20px;
+  }
+
+  .nav-links ul li {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    background: rgba(11, 15, 28, 0.7);
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: 0;
+    text-align: left;
+    z-index: 2;
+  } 
+}
+*/
+
+.features {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.features h1 {
+  margin-top : 30px ;
+  color: white;
+  font-size: 25px;
+}
+
+.features p {
+
+  color: white;
+  font-size: 19px;
+  font-weight: 300;
+  /* line-height : 22px ; */
+  padding: 10px;
+}
+
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  /* flex-direction : row ; */
+}
+
+.features-col {
+  flex-basis: 31%;
+  /* The flex-basis CSS property sets the initial main size of a flex item. */
+  background: rgb(234, 110, 15);
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  /* box-sizing : border-box ; */
+  /* The box-sizing property allows us to include the padding and border in an element's total width and height. If you set box-sizing: border-box; on an element, padding and border are included in the width and height: Both divs are the same size now! Hooray! */
+  transition: 0.5s;
+}
+
+.features-col p {
+  font-size: 15px;
+  /* padding : 20px ; */
+}
+
+.features-col h3 {
+  text-align: center;
+  /* font-weight : 500 ; */
+  margin: 10px 0;
+}
+
+.features-col:hover {
+  box-shadow: 0 0 30px 0 rgb(159, 158, 158);
+}
+
+.features-col button {
+  font-size: 15px;
+  border-radius: 10px;
+  background-color: rgba(201, 19, 19, 0.85);
+  color: black;
+  padding: 10px;
+  border-color: rgba(205, 58, 21, 0.684);
+  transition: 0.5s;
+}
+
+.features-col button:hover {
+  background-color: black;
+  color: orange;
+  border-color: black;
+}
+
+@media(max-width : 700px) {
+  .row {
+    flex-direction: column;
+  }
+
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.footer p {
+  color: white;
+  font-size: 15px;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  border-radius : 50px ;
+  margin : 30px ;
+}
+
+.fa-facebook
+{
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube
+{
+  background-color : red ;
+  color : white;
+}
+
+.fa-instagram
+{
+  background: linear-gradient(45deg, rgb(187, 59, 204), transparent), radial-gradient(rgb(160, 65, 211), transparent);
+  color : white ;
+}
+
+.fa-whatsapp
+{
+  background-color: rgb(53, 209, 53) ;
+  color : white ;
+}
