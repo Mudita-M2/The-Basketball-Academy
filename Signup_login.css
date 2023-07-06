@@ -1,67 +1,70 @@
-body
-{
-    margin : 0 ;
-    padding : 0 ;
-    justify-content : center ;
-    align-items : center ;
-    min-height : 100vh ;
-    font-family : 'Poppins',sans-serif ;
-    background-image: linear-gradient(rgba(12, 17, 35, 0.7), rgba(11, 15, 28, 0.7)), url("header_img.jpeg");
-    background-position: center;
-    background-size: cover;
-    position: relative;
+body {
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(
+      rgba(12, 17, 35, 0.7),
+      rgba(11, 15, 28, 0.7)
+    ),
+    url("header_img.jpeg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-right: 6px;
-    padding-left: 6px
-  }
-  
-  .nav-links {
-    /* display : flex ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 6px;
+  padding-left: 6px;
+}
+
+.nav-links {
+  /* display : flex ;
     justify-content : space-between ; */
-    flex: 1;
-    /* byfircation of flex box items spaces  */
-    /* the width of all other elements will be the same as their content, but the element with flex: 1 will be given the remaining full space. */
-    text-align: right;
-  }
-  
-  .nav-links ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 8px 12px;
-    position: relative;
-  }
-  
-  .nav-links ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    transition: 0.5s;
-  }
-  
-  .nav-links ul li :hover {
-    width: 100%;
-    color: rgb(236, 132, 76);
-  }
-  
-  .nav-links ul li :active {
-    color: purple;
-  }
-  
-  .logo-img {
-    /* width: 50px; */
-     width : 150px ;
-     padding-left : 30px ;
-     padding-top : 30px ;
-  }
-  
-  /* .nav-links ul li ::after 
+  flex: 1;
+  /* byfircation of flex box items spaces  */
+  /* the width of all other elements will be the same as their content, but the element with flex: 1 will be given the remaining full space. */
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.nav-links ul li :hover {
+  width: 100%;
+  color: rgb(236, 132, 76);
+}
+
+.nav-links ul li :active {
+  color: purple;
+}
+
+.logo-img {
+  /* width: 50px; */
+  width: 150px;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+/* .nav-links ul li ::after 
   {
     content : '' ;
     width : 0% ;
@@ -76,157 +79,137 @@ nav {
   {
     width : 100% ;
   } */
-  
-  @media(max-width : 700px) {
-   
-  
-    .nav-links ul li {
-      display: block;
-    }
-  
-    .nav-links {
-      position: absolute;
-      background: rgba(11, 15, 28, 0.7);
-      height: 100vh;
-      width: 200px;
-      top: 0;
-      right: 0;
-      text-align: left;
-      z-index: 2;
-    }
+
+@media (max-width: 700px) {
+  .nav-links ul li {
+    display: block;
   }
 
-.hero
-{
-    display : flex ;
-    justify-content : center ;
-    align-items : center ;
-    margin-top : 30px ;
+  .nav-links {
+    position: absolute;
+    background: rgba(11, 15, 28, 0.7);
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: 0;
+    text-align: left;
+    z-index: 2;
+  }
 }
 
-.main
-{
-    width : 500px ;
-    height : 500px ;
-    background : rgba(15, 15, 46, 0.613) ;
-    backdrop-filter : blur(5px) ; 
-    overflow : hidden ;
-    border-radius : 10px ;
-    box-shadow : 5px 20px 50px black ;
-    
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
 }
 
-
-#chk
-{
-    display : none ;    
+.main {
+  width: 500px;
+  height: 500px;
+  background: rgba(15, 15, 46, 0.613);
+  backdrop-filter: blur(5px);
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 5px 20px 50px black;
 }
 
-.signup
-{
-    position : relative ;
-    width : 100% ;
-    height : 100% ;
+#chk {
+  display: none;
 }
 
-label
-{
-    color : white ;
-    font-size : 2.3em ;
-    justify-content : center ;
-    display : flex ;
-    margin : 60px ;
-    font-weight : bold ;
-    cursor : pointer ;
-    transition : .5s ease-in-out ;
+.signup {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
-input
-{
-    width : 60% ;
-    height : 20px ;
-    background : rgb(255, 255, 255) ;
-    justify-content : center ;
-    display : flex ;
-    margin : 20px auto ;
-    padding : 10px ;
-    border : none ;
-    outline : none ; 
-    border-radius : 5px ;
+label {
+  color: white;
+  font-size: 2.3em;
+  justify-content: center;
+  display: flex;
+  margin: 60px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
 }
 
-button
-{
-   width : 40% ;
-   height : 40px ;
-   margin : 10px auto ;
-   justify-content : center ;
-   display : block ;
-   color : white ;
-   background : rgb(255, 153, 0) ;
-   font-size : 1em ;
-   margin-top : 20px ;
-   outline : none ;
-   border : none ;
-   border-radius : 10px ;
-   transition : .2s ease-in ;
-   cursor : pointer ;
+input {
+  width: 60%;
+  height: 20px;
+  background: rgb(255, 255, 255);
+  justify-content: center;
+  display: flex;
+  margin: 20px auto;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
 }
 
-button:hover
-{
-    background:rgb(254, 188, 7) ;
-    color :  black ;
+button {
+  width: 40%;
+  height: 40px;
+  margin: 10px auto;
+  justify-content: center;
+  display: block;
+  color: white;
+  background: rgb(255, 153, 0);
+  font-size: 1em;
+  margin-top: 20px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  transition: 0.2s ease-in;
+  cursor: pointer;
 }
 
-.login 
-{
-    height : 460px ;
-    background : white ;
-    border-radius : 60% / 10% ;
-    transform : translateY(-180px) ;
-    transition : .8s ease-in-out ;
+button:hover {
+  background: rgb(254, 188, 7);
+  color: black;
 }
 
-.login label
-{
-    color : rgb(14, 14, 47) ;
-    transform : scale(.6) ;
+.login {
+  height: 460px;
+  background: white;
+  border-radius: 60% / 10%;
+  transform: translateY(-180px);
+  transition: 0.8s ease-in-out;
 }
 
-#chk:checked ~ .login
-{
-    transform : translateY(-500px) ;
+.login label {
+  color: rgb(14, 14, 47);
+  transform: scale(0.6);
 }
 
-#chk:checked ~ .login label
-{
-    transform : scale(1) ;
-    padding-top : 20px ;
+#chk:checked ~ .login {
+  transform: translateY(-500px);
 }
 
-#chk:checked ~ .signup label
-{
-    transform : scale(.6) ;
+#chk:checked ~ .login label {
+  transform: scale(1);
+  padding-top: 20px;
 }
 
-.login input
-{
-    background : rgba(20, 20, 53, 0.893) ;
-    color : white ;
+#chk:checked ~ .signup label {
+  transform: scale(0.6);
 }
 
-.login ::placeholder
-{
-   color : white ;
+.login input {
+  background: rgba(20, 20, 53, 0.893);
+  color: white;
 }
 
-.footer
-{
-    display : flex ;
-    justify-content : center ;
-    align-items : center ;
-    color : white ;
-    margin-top : 30px ;
-    margin-bottom : 30px ;
+.login ::placeholder {
+  color: white;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
